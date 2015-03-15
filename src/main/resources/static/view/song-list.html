@@ -1,0 +1,18 @@
+<div ng-controller="SongListController">
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Title</th>
+				<th>Artist</th>
+				<th>Album</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="song in songs._embedded.songs">
+				<td ng-bind="song.title"></td>
+				<td ng-bind="song.artist"></td>
+				<td ng-bind="song.album"></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
